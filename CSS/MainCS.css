@@ -1,0 +1,141 @@
+:root{
+    --bg_DuocColor: #0b0a31;
+    --bg_DuocContrast: #ffc501;
+}
+
+
+body{
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(223, 214, 202);
+    color: rgba(0,0,0,0.50);
+}
+
+video{
+	position: fixed;
+
+	min-width: 100%;
+	min-height: 100%;
+
+	top:50%;
+	left:50%;
+
+	transform: translateX(-50%) translateY(-50%);
+
+	z-index: -1;
+
+}
+
+.Box{
+    text-align: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.colSelector{
+    outline-style: inset;
+    outline-color: var(--bg_DuocColor);
+    border-radius: 1em;
+}
+
+.colSelector:hover{
+    background-color: var(--bg_DuocColor);
+    color: var(--bg_DuocContrast);
+}
+
+
+
+.bg_Duoc{
+    width: 100%;
+    height: 10rem;
+    padding: 2em 0 4vh 0 ;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../MEDIA/maps.jpg");
+    
+}
+
+.bg_Duoc h1{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(38, 0, 255);
+}
+.row{
+    margin-left: 2%;
+    padding: 0;
+    row-gap: 1vh;
+    color: white;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logIn_info{
+    height: 10vh;
+    width: auto;
+    margin-top: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    color: white;
+    align-content: flex-end;
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+.boxLog{
+    margin-left: 65vh;
+    margin-right: 65vh;
+    background-color: var(--bg_DuocColor);
+    border-radius: 1em;
+    height: fit-content;
+}
+
+@media screen and (min-width: 700px) {
+    .boxLog{
+        margin-left: 50vh;
+        margin-right: 50vh;
+        background-color: var(--bg_DuocColor); 
+        border-radius: 1em;
+        height: fit-content;
+    }
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+}
+
+.separator{
+    color: #fff701;
+}
+
+.f_left{
+    align-items: left;
+    align-content: left;
+    font-size: 0.7em;
+    align-self: flex-start;
+}
+
+.f_redirect{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;  
+}
+
+.f_redirect:active{
+    color: #FFFF;
+}
