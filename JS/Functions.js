@@ -66,9 +66,9 @@ function Val_Pass(info,pass){
 
 function Redirect(data){
     if(data == 1){
-        window.location.href = "contact.html";
+        window.location.href = "PHP/login.php";
     }else {
-        window.location.href= "contact.html";
+        window.location.href= "PHP/register.html";
     }
 }
 
